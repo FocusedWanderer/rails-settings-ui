@@ -72,7 +72,7 @@ module RailsSettingsUi::SettingsHelper
 
   def get_collection_method
     case Rails::VERSION::STRING
-    when /4\.0\.\d+/ || /3\..*/
+    when /5\.\d+/ || /4\.\d+/ || /3\..*/
       :all
     else
       :get_all
